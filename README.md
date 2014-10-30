@@ -1,4 +1,4 @@
-# Phosbox Lightbox 1.0
+# Phosbox Lightbox
 
 Phosbox is a minimalistic, easy-to-use and responsive jQuery lightbox plugin
 
