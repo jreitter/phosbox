@@ -1,0 +1,105 @@
+/*
+* Plugin Name: PHOSBOX Lightbox 
+* Version: 1.0
+* Author: Johnnes Reitter
+* Author URL: www.jreitter.com
+* License: MIT	
+* Plugin URL: http://git.io/RlUsFw
+*/
+
+#pbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  z-index: 9999;
+}
+
+#pbox:hover {
+  cursor: zoom-out;
+  cursor: -webkit-zoom-out;
+}
+
+.phosboxed:hover {
+	cursor: zoom-in;
+	cursor: -webkit-zoom-in;
+}
+
+#pbox-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#pbox-image {
+  display: block;
+  max-width: 95%;
+  max-height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#pbox-loader {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.pbox-active {
+  overflow: hidden;
+  -webkit-overflow-scrolling: none;
+}
+
+.double-bounce1, 
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e3e3e3;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
