@@ -70,7 +70,10 @@
 				
 				$('html').addClass('pbox-active');
 				
-				
+				$(this).css({
+					cursor: 'zoom-in',
+					cursor: '-webkit-zoom-in'
+				});
 				
 				$('#pbox').imagesLoaded(function(){
 					$('#pbox-image').fadeIn(200);
