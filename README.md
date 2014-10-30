@@ -8,7 +8,7 @@ tba
 
 ## Author
 
-Johannes Reitter
+Johannes Reitter </br>
 www.jreitter.com
 
 ## Usage
