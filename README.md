@@ -20,7 +20,7 @@ It can also be like:
 <a class="YourClassName" href="PathToImgSrc">Click this awsome link to open Phosbox</a>
 ```
 
-Include the stylesheet into your `header`:
+Include the stylesheet into your `<header>`:
 
 ```html
 <link rel="stylesheet" src="path/to/phosbox.css" />
