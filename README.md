@@ -6,11 +6,6 @@ Phosbox is a minimalistic, easy-to-use and responsive lightbox plugin
 
 tba
 
-## Author
-
-Johannes Reitter   
-www.jreitter.com
-
 ## Usage
 
 Using Phosbox is simple. The plugin requires a <a class="YourClassName"></a> link that referrs to an image in order to work.
