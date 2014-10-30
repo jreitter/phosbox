@@ -25,6 +25,12 @@ It can also be like:
 <a class="YourClassName" href="PathToImgSrc">Click this awsome link to open Phosbox</a>
 ```
 
+Include the stylesheet into your `header`:
+
+```html
+<link rel="stylesheet" src="path/to/phosbox.css" />
+```
+
 Phosbox requires jQuery in order to work. Add jQuery and Phosbox right before your `</body>` tag:
 
 ```html
