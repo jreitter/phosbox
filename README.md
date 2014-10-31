@@ -6,40 +6,34 @@ Phosbox is a minimalistic, easy-to-use and responsive jQuery lightbox plugin
 
 http://jreitter.com/github/demo/phosbox/
 
-## Usage
+## HOW TO USE PHOSBOX
 
-Using Phosbox is simple. The plugin requires a <a class="YourClassName"></a> link that referrs to an image in order to work.
+1. Include the the phosbox.css stylesheet in your `<head>`   
+```<link rel="stylesheet" href="path/to/phosbox.css" />```
 
-In most cases your markup will be like this:
-```html
-<a class="YourClassName" href="PathToImgSrc"><img src="PathToDisplayedImgSrc"></a>
+2.Include jQuery and Phosbox right before your `</body>` tag:
 ```
-It can also be like:
-
-```html
-<a class="YourClassName" href="PathToImgSrc">Click this awsome link to open Phosbox</a>
-```
-
-Include the stylesheet into your `<header>`:
-
-```html
-<link rel="stylesheet" src="path/to/phosbox.css" />
-```
-
-Phosbox requires jQuery in order to work. Add jQuery and Phosbox right before your `</body>` tag:
-
-```html
-<script scr="path/to/jquery.js"></script> 
+<script src="path/to/jquery.js"></script>
 <script src="path/to/phosbox.js"></script>
 ```
 
-Initialize the plugin:
+3. Phosbox works with a link that referrs to an image. In order for the plugin to work, your link must have a specific class assigned to it:
+```
+<a class="your-class" href="path/to/image">
+   <img src="path/to/thumbnail">
+</a>
+```
 
-```js
+Your markup could also look like this:   
+```<a class="your-class" href="path/to/image">Awsome Photo!</a>```
+
+4. Simply call the plugin and you're done. Phosbox is ready to work.
+```
 $(document).ready(function(){
-  $('.YourClassName').phosbox();
+   $('.your-class').phosbox();
 });
 ```
+
 
 ## License
 
