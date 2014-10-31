@@ -9,7 +9,9 @@ http://jreitter.com/github/demo/phosbox/
 ## HOW TO USE PHOSBOX
 
 Include the the phosbox.css stylesheet in your `<head>`   
-```<link rel="stylesheet" href="path/to/phosbox.css" />```
+```
+<link rel="stylesheet" href="path/to/phosbox.css" />
+```
 
 Include jQuery and Phosbox right before your `</body>` tag:
 ```
@@ -25,7 +27,9 @@ Phosbox works with a link that referrs to an image. In order for the plugin to w
 ```
 
 Your markup could also look like this:   
-```<a class="your-class" href="path/to/image">Awsome Photo!</a>```
+```
+<a class="your-class" href="path/to/image">Awsome Photo!</a>
+```
 
 Simply call the plugin and you're done. Phosbox is ready to work.
 ```
