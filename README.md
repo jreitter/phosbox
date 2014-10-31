@@ -4,7 +4,7 @@ Phosbox is a minimalistic, easy-to-use and responsive jQuery lightbox plugin
 
 ## Demo
 
-http://jreitter.com/github/demo/phosbox/
+http://jreitter.com/demo/phosbox/
 
 ## HOW TO USE PHOSBOX
 
