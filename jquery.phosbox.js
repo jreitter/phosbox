@@ -80,7 +80,7 @@
         });
     };
     
-    if ( $.isFunction($.fn.imagesLoaded) ) {
+	if ( $.isFunction($.fn.imagesLoaded) ) {
 	}
 	
 	else {
@@ -978,5 +978,5 @@
 		
 		});
 	};
-    
+
 })(jQuery);
