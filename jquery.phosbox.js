@@ -1,6 +1,6 @@
 /*
 * Plugin Name: PHOSBOX Lightbox 
-* Version: 1.0
+* Version: 1.1
 * Author: Johnnes Reitter
 * Author URL: www.jreitter.com
 * License: MIT	
