@@ -13,12 +13,26 @@
 				e.preventDefault();
 				var image_href = $(this).attr("href");
 				if ($('#pbox').length > 0) {
-					$('#pbox-content').html('<div id="pbox-loader">' + '<div class="double-bounce1"></div>' + '<div class="double-bounce2"></div>' + '</div>' + '<img id="pbox-image" src="' + image_href + '" />');
+					$('#pbox-content').html(
+						'<div id="pbox-loader">' + 
+							'<div class="double-bounce1"></div>' + 
+							'<div class="double-bounce2"></div>' + 
+						'</div>' + 
+						'<img id="pbox-image" src="' + image_href + '" />');
 					$('#pbox').fadeIn(200);
 					$('#pbox-image').hide();
 				}
 				else {
-					var lightbox = '<div id="pbox" style="display:none">' + '<div id="pbox-content">' + '<div id="pbox-loader">' + '<div class="double-bounce1"></div>' + '<div class="double-bounce2"></div>' + '</div>' + '<img id="pbox-image" src="' + image_href + '" />' + '</div>' + '</div>';
+					var lightbox = '
+					<div id="pbox" style="display:none">' + 
+						'<div id="pbox-content">' + 
+							'<div id="pbox-loader">' + 
+								'<div class="double-bounce1"></div>' + 
+								'<div class="double-bounce2"></div>' + 
+							'</div>' + 
+							'<img id="pbox-image" src="' + image_href + '" />' + 
+						'</div>' + 
+					'</div>';
 					$('body').append(lightbox);
 					$('#pbox').fadeIn(200);
 					$('#pbox').click(function() {
