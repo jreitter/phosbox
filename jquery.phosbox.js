@@ -1,6 +1,6 @@
 /*
  * Plugin Name: PHOSBOX Lightbox
- * Version: 1.1
+ * Version: 1.5
  * Author: Johnnes Reitter
  * Author URL: www.jreitter.com
  * License: MIT
@@ -10,7 +10,10 @@
 	$.fn.phosbox = function(options) {
         var settings = $.extend({
 	        fadeInSpeed: 350,
-	        fadeOutSpeed: 350
+	        fadeOutSpeed: 350,
+	        loaderColor: '#777777',
+	        backgroundColor: '#000000',
+	        backgroundOpacity: 0.95
         }, options);
 		return this.each(function() {
 			$(this).click(function(e) {
@@ -18,9 +21,10 @@
 				var image_href = $(this).attr("href");
 				if ($('#pbox').length > 0) {
 					$('#pbox-content').html(
+						'<div id="pbox-bg" style="background-color:' + settings.backgroundColor + ';opacity:' + settings.backgroundOpacity + '"></div>' +
 						'<div id="pbox-loader">' + 
-							'<div class="double-bounce1"></div>' + 
-							'<div class="double-bounce2"></div>' + 
+							'<div class="double-bounce1" style="background-color:'+settings.loaderColor+'"></div>' + 
+							'<div class="double-bounce2" style="background-color:'+settings.loaderColor+'"></div>' + 
 						'</div>' + 
 						'<img id="pbox-image" src="' + image_href + '" />');
 					$('#pbox').fadeIn(settings.fadeInSpeed);
@@ -29,10 +33,11 @@
 				else {
 					var lightbox = 
 					'<div id="pbox" style="display:none">' + 
-						'<div id="pbox-content">' + 
+						'<div id="pbox-content">' +
+							'<div id="pbox-bg" style="background-color:' + settings.backgroundColor + ';opacity:' + settings.backgroundOpacity + '"></div>' + 
 							'<div id="pbox-loader">' + 
-								'<div class="double-bounce1"></div>' + 
-								'<div class="double-bounce2"></div>' + 
+								'<div class="double-bounce1" style="background-color:'+settings.loaderColor+'"></div>' + 
+								'<div class="double-bounce2" style="background-color:'+settings.loaderColor+'"></div>' + 
 							'</div>' + 
 							'<img id="pbox-image" src="' + image_href + '" />' + 
 						'</div>' + 

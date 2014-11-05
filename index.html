@@ -95,8 +95,11 @@
 				<p><bold>6.</bold> Default <bold>Options</bold>:</p> 
 				<div class="language">JS</div>
 				<pre><code>$('.your-class').phosbox({
-   fadeInSpeed: 300, 
-   fadeOutSpeed: 300
+   fadeInSpeed: 350,
+   fadeOutSpeed: 350,
+   loaderColor: '#777777',
+   backgroundColor: '#000000',
+   backgroundOpacity: 0.95
 });</code></pre>
 				
 			</div>
@@ -149,7 +152,11 @@
         
         <script>
 	        $(document).ready(function(){
-		        $('.phosbox').phosbox();
+		        $('.phosbox').phosbox({
+			        loaderColor: '#ff9900',
+			        backgroundColor: '#0099ff',
+			        backgroundOpacity: 0.5
+		        });
 	        });
         </script>
 
