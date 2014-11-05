@@ -7,7 +7,11 @@
  * Plugin URL: http://git.io/RlUsFw
  */
 (function($) {
-	$.fn.phosbox = function() {
+	$.fn.phosbox = function(options) {
+        var settings = $.extend({
+	        fadeInSpeed: 350,
+	        fadeOutSpeed: 350
+        }, options);
 		return this.each(function() {
 			$(this).click(function(e) {
 				e.preventDefault();
@@ -19,12 +23,12 @@
 							'<div class="double-bounce2"></div>' + 
 						'</div>' + 
 						'<img id="pbox-image" src="' + image_href + '" />');
-					$('#pbox').fadeIn(200);
+					$('#pbox').fadeIn(settings.fadeInSpeed);
 					$('#pbox-image').hide();
 				}
 				else {
-					var lightbox = '
-					<div id="pbox" style="display:none">' + 
+					var lightbox = 
+					'<div id="pbox" style="display:none">' + 
 						'<div id="pbox-content">' + 
 							'<div id="pbox-loader">' + 
 								'<div class="double-bounce1"></div>' + 
@@ -34,14 +38,14 @@
 						'</div>' + 
 					'</div>';
 					$('body').append(lightbox);
-					$('#pbox').fadeIn(200);
+					$('#pbox').fadeIn(settings.fadeInSpeed);
 					$('#pbox').click(function() {
-						$('#pbox').fadeOut(200);
+						$('#pbox').fadeOut(settings.fadeOutSpeed);
 						$('html').removeClass('pbox-active');
 					});
 					$(document).keydown(function(e) {
 						if (e.keyCode == 27) {
-							$('#pbox').fadeOut(200);
+							$('#pbox').fadeOut(settings.fadeOutSpeed);
 							$('html').removeClass('pbox-active');
 						}
 					});
@@ -49,7 +53,7 @@
 				}
 				$('html').addClass('pbox-active');
 				$('#pbox').imagesLoaded(function() {
-					$('#pbox-image').fadeIn(200);
+					$('#pbox-image').fadeIn(settings.fadeInSpeed);
 					$('#pbox-loader').hide();
 				});
 			});
