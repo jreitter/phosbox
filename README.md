@@ -41,8 +41,11 @@ $(document).ready(function(){
 Default Options:
 ```js
 $('.your-class').phosbox({
-   fadeInSpeed: 300,
-   fadeOutSpeed: 300
+	fadeInSpeed: 350,
+	fadeOutSpeed: 350,
+	loaderColor: '#777777',
+	backgroundColor: '#000000',
+	backgroundOpacity: 0.95
 });
 ```
 
