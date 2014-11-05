@@ -44,6 +44,7 @@ $('.your-class').phosbox({
    fadeInSpeed: 300,
    fadeOutSpeed: 300
 });
+```
 
 
 ## License
