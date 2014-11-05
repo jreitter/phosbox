@@ -41,11 +41,11 @@ $(document).ready(function(){
 Default Options:
 ```js
 $('.your-class').phosbox({
-	fadeInSpeed: 350,
-	fadeOutSpeed: 350,
-	loaderColor: '#777777',
-	backgroundColor: '#000000',
-	backgroundOpacity: 0.95
+	fadeInSpeed: 350, //fade-in speed in ms
+	fadeOutSpeed: 350, //fade-out speed in ms
+	loaderColor: '#777777', //color of loading animation
+	backgroundColor: '#000000', //background color of phosbox
+	backgroundOpacity: 0.95 //opacity of phosbox background
 });
 ```
 
