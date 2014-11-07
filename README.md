@@ -53,3 +53,9 @@ $('.your-class').phosbox({
 ## LICENSE
 
 MIT License
+
+## CREDITS
+
+<a href="https://github.com/tobiasahlin/SpinKit">SpinKit</a>
+<a href="https://github.com/desandro/imagesloaded">ImagesLoaded</a>
+<a href="https://github.com/isagalaev/highlight.js">Highlight.js</a>

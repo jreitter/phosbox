@@ -27,6 +27,10 @@
 		<meta property="og:description" content="Phosbox is a minimal and responsive lightbox for photos" />
 		<meta property="og:url" content="http://www.jreitter.com/demo/phosbox/" />
 		<meta property="og:image" content="http://www.jreitter.com/demo/phosbox/assets/img/ogimg.png" />
+		
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
         <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
@@ -69,32 +73,32 @@
 			
 				<p><bold>1.</bold> Include the the <bold>phosbox.css</bold> stylesheet in your &lt;head&gt;</p>
 				<div class="language">HTML</div>
-				<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/phosbox.css&quot; /&gt;</code></pre>
+				<pre><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/phosbox.css&quot; /&gt;</code></pre>
 			
 				<p><bold>2.</bold>Include <bold>jQuery</bold> and <bold>Phosbox</bold> right before your &lt;/body&gt; tag:</p>
 				<div class="language">HTML</div>
-				<pre><code>&lt;script src=&quot;path/to/jquery.js&quot;&gt;&lt;/script&gt;
+				<pre><code class="html">&lt;script src=&quot;path/to/jquery.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;path/to/phosbox.js&quot;&gt;&lt;/script&gt;</code></pre>
 
 				<p><bold>3.</bold> <bold>Phosbox</bold> works with a <bold>link</bold> that referrs to an <bold>image</bold>. In order for the plugin to work, your link must have a specific <bold>class</bold> assigned to it:</p> 
 				<div class="language">HTML</div>
-				<pre><code>&lt;a class=&quot;your-class&quot; href=&quot;path/to/image&quot;&gt;
+				<pre><code class="html">&lt;a class=&quot;your-class&quot; href=&quot;path/to/image&quot;&gt;
    &lt;img src=&quot;path/to/thumbnail&quot;&gt;
 &lt;/a&gt;</code></pre>
 
 				<p>Your markup could also look like this:</p> 
 				<div class="language">HTML</div>
-				<pre><code>&lt;a class=&quot;your-class&quot; href=&quot;path/to/image&quot;&gt;Awsome Photo!&lt;/a&gt;</code></pre>
+				<pre><code class="html">&lt;a class=&quot;your-class&quot; href=&quot;path/to/image&quot;&gt;Awsome Photo!&lt;/a&gt;</code></pre>
 
 				<p><bold>4.</bold> Simply <bold>call</bold> the plugin and you're done. <bold>Phosbox</bold> is ready to work.</p> 
 				<div class="language">JS</div>
-				<pre><code>$(document).ready(function(){
+				<pre><code class="javascript">$(document).ready(function(){
    $('.your-class').phosbox();
 });</code></pre>
 				
 				<p><bold>6.</bold> Default <bold>Options</bold>:</p> 
 				<div class="language">JS</div>
-				<pre><code>$('.your-class').phosbox({
+				<pre><code class="javascript">$('.your-class').phosbox({
    fadeInSpeed: 350, //fade-in speed in ms
    fadeOutSpeed: 350, //fade-out speed in ms
    loaderColor: '#777777', //color of loading animation
@@ -134,6 +138,7 @@
 				<ul>
 					<li><a href="https://github.com/tobiasahlin/SpinKit">SpinKit</a> - A collection of loading indicators animated with CSS</li>
 					<li><a href="https://github.com/desandro/imagesloaded">ImagesLoaded</a> - JavaScript is all like "You images done yet or what?"</li>
+					<li><a href="https://github.com/isagalaev/highlight.js">Highlight.js</a> - Javascript syntax highlighter</li>
 				</ul>		
 			</div>
 		</section>
