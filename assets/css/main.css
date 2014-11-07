@@ -223,7 +223,14 @@ code {
 
 .language {
   width: 100%;
-  background: #989898;
+  background: #989898; /* Old browsers */
+  background: -moz-linear-gradient(left, #989898 0%, #bfbfbf 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#989898), color-stop(100%,#bfbfbf)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #989898 0%,#bfbfbf 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #989898 0%,#bfbfbf 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #989898 0%,#bfbfbf 100%); /* IE10+ */
+  background: linear-gradient(to right, #989898 0%,#bfbfbf 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#989898', endColorstr='#bfbfbf',GradientType=1 ); /* IE6-9 */
   color: #fff;
   border-bottom: 1px solid #fff;
   padding: 0.2rem 0.2rem 0.2rem 1.2rem; }
