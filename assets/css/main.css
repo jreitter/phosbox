@@ -8,11 +8,8 @@
    ========================================================================== */
 * {
   -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
   box-sizing: border-box;
-  /* Opera/IE 8+ */
   -webkit-tap-highlight-color: transparent; }
 
 html {
@@ -186,27 +183,19 @@ h1 {
   border: 5px solid #222;
   border-radius: 10px; }
 
-pre, code {
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre;
-  white-space: -moz-pre-wrap;
-  white-space: pre-wrap;
-  word-break: break-word; }
-
 pre {
-  margin-top: 0;
-  font-family: 'Inconsolata', monospace;
-  font-size: 1.4rem;
-  color: #fff;
-  padding: 1.2rem;
-  background: #303030;
-  text-shadow: 1px 1px #000; }
+	margin: 0; }
+
+code {
+	font-size: 1.4rem !important;
+	padding: 1.2rem !important;
+}
 
 .language {
   width: 100%;
-  background: #ffae00;
-  color: #222;
+  background: #989898;
+  color: #fff;
+  border-bottom: 1px solid #fff;
   padding: 0.2rem 0.2rem 0.2rem 1.2rem; }
 
 bold {
